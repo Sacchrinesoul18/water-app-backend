@@ -29,8 +29,10 @@ It provides APIs for user authentication, community forum, weather data, and flo
 - POST /api/auth/login → Login user (returns JWT)
 
 ### Forum
+-### Forum
 - GET /api/forum → Get all posts
-- POST /api/forum → Create post (requires token)
+- POST /api/forum → Create post (requires authentication)
+- POST /api/forum/:id/reply → Reply to a post (requires authentication)
 
 ### Weather
 - GET /api/weather → Get current weather
@@ -42,3 +44,9 @@ It provides APIs for user authentication, community forum, weather data, and flo
 - Use Thunder Client or Postman to test APIs
 - Include JWT token in Authorization header:
   Authorization: Bearer <token>
+
+  ## Features
+- User authentication with JWT
+- Community forum with posts and replies
+- Real-time weather data integration
+- Flood-aware routing support
