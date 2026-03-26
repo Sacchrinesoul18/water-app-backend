@@ -29,7 +29,6 @@ It provides APIs for user authentication, community forum, weather data, and flo
 - POST /api/auth/login → Login user (returns JWT)
 
 ### Forum
--### Forum
 - GET /api/forum → Get all posts
 - POST /api/forum → Create post (requires authentication)
 - POST /api/forum/:id/reply → Reply to a post (requires authentication)
